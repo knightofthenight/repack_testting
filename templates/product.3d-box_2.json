@@ -12,16 +12,24 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_TfVWjh": {
+        "vendor": {
           "type": "text",
           "settings": {
-            "text": "Package of 80 pcs",
+            "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "text_TfVWjh": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>PACKAGE OF 80 PCS<\/strong>",
+            "text_style": "body"
           }
         },
         "product-rating": {
@@ -66,8 +74,9 @@
         }
       },
       "block_order": [
-        "text_TfVWjh",
+        "vendor",
         "title",
+        "text_TfVWjh",
         "product-rating",
         "price",
         "variant_picker",
