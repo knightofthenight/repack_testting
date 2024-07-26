@@ -34,6 +34,7 @@
         },
         "product-rating": {
           "type": "rating",
+          "disabled": true,
           "settings": {
           }
         },
